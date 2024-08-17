@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.notes-container{
+    margin-bottom: 20px;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #cf91ff, #95c0ff);
+    color: white;
+    padding-top: 4%;
+    padding-left: 10%;
+}
+
+.container h1{
+    font-size: 35px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+h1 img{
+    width: 78px;
+    cursor: default;
+}
+
+.container button{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#9418fd, #571094);
+    color: white;
+    font-size: 16px;
+    outline: 0;
+    border: 0;
+    border-radius: 40px;
+    padding: 15px 25px;
+    margin: 30px 0 20px;
+    cursor: pointer;
+}
+
+button img{
+    width: 25px;
+    margin-right: 8px; 
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    max-height: 334px;
+    background: white;
+    color: black;
+    padding: 20px;
+    margin: 20px 0;
+    outline: none;
+    border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+
+.input-box div span{
+    color: black;
+    font-size: 16px;
+    line-height: 28px;
+    white-space: pre-line;
+}
+
+.input-box img{
+    width: 22px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 590px) {
+    .notes-container {
+        margin-bottom: 20px;
+        margin-right: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Custom Scrollbar for WebKit browsers in the p tag */
+p::-webkit-scrollbar {
+    width: 16px; /* Width of the scrollbar */
+  }
+  
+  p::-webkit-scrollbar-track {
+    background: #fff; /* White background color of the track */
+    border-radius: 20px; /* Rounded corners for the track */
+  }
+  
+  p::-webkit-scrollbar-thumb {
+    background: #000; /* Black color of the scrollbar thumb */
+    border-radius: 20px; /* Rounded corners for the thumb */
+  }
+  
+  p::-webkit-scrollbar-thumb:hover {
+    background: #333; /* Slightly lighter black when hovered */
+  }
+  
+  /* Custom Scrollbar for Firefox in the p tag */
+  p {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: #000 #fff; /* Thumb color and track color */
+  }
